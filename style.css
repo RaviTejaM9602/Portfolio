@@ -53,7 +53,8 @@ h6 {
   width: 90%;
 }
 
-p {
+span {
+  display: block;
   text-align: left;
 }
 
