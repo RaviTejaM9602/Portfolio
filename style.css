@@ -37,9 +37,10 @@
   justify-content: space-between;
 }
 
-.top i {
-  margin: 36px 32px;
+.top .fas {
+  margin: 40px 32px;
   color: #6070ff;
+  width: 40px;
 }
 
 h6 {
