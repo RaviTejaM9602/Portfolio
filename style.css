@@ -76,3 +76,23 @@ span {
 .margin {
   margin: 5px;
 }
+
+.footer_section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+a {
+  color: gray;
+}
+
+.footer_section .icons a {
+  padding: 10px;
+}
+
+a img {
+  color: gray;
+  width: 15px;
+}
