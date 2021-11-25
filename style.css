@@ -9,14 +9,14 @@
   padding-left: 20px;
 }
 
-.image {
+.head-section {
   width: 360px;
   height: 720px;
 }
 
 .top {
   justify-content: space-between;
-}
+ }
 
 h6 {
   color: black;
@@ -24,33 +24,29 @@ h6 {
   padding-top: 6px;
 }
 
-.header_section {
-  background-color: cadetblue;
-}
-
 .signal_icon {
   display: flex;
   justify-content: space-between;
 }
 
-.main_section {
+.main-section {
   background-image: url("images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
-  height: 400px;
+  height: 240px;
   width: 375px;
   left: -34px;
   padding-top: 70px;
   padding-left: 20px;
 }
 
-.fas {
-  margin: 10px;
-}
-
 .description {
   padding-top: 10px;
   height: 90%;
   width: 90%;
+}
+
+.fas {
+  margin: 10px;
 }
 
 span {
@@ -73,14 +69,10 @@ span {
   padding-top: 6px;
 }
 
-.margin {
-  margin: 5px;
-}
-
-.footer_section {
+.footer-section {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  padding: 20px 20px;
   justify-content: flex-end;
 }
 
@@ -88,8 +80,8 @@ a {
   color: gray;
 }
 
-.footer_section .icons a {
-  padding: 10px;
+.footer-section .icons a {
+  padding: 8px;
 }
 
 a img {
