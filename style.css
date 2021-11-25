@@ -1,1 +1,35 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+  padding-left: 20px;
+}
+
+.image {
+  width: 360px;
+  height: 720px;
+}
+
+.top {
+  justify-content: space-between;
+}
+
+h6 {
+  color: black;
+  font-size: 20px;
+  padding-top: 6px;
+}
+
+.header_section {
+  background-color: cadetblue;
+}
+
+.signal_icon {
+  display: flex;
+  justify-content: space-between;
+}
 
