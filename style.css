@@ -141,7 +141,7 @@ li img {
   height: 20px;
 }
 
-/* portfolio work section*/
+/* portfolio work section */
 
 .work-container {
   margin: 50px auto;
@@ -175,7 +175,6 @@ li img {
 .img-3 { grid-area: img-3; }
 .img-4 { grid-area: img-4; }
 
-
 .img image {
   height: 220px;
 }
@@ -194,7 +193,6 @@ li img {
 
 .canopy {
   display: flex;
-  flex-direction: left;
   width: 100%;
   color: #172b4d;
   margin: 14px 0;
@@ -206,27 +204,7 @@ li img {
   height: 16px;
   font-size: 13px;
   font-weight: 600;
-  font-size: 13px;
   line-height: 16px;
-}
-
-.canopy ul li {
-  color: #7a869a;
-  width: 290px;
-  height: 72px;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 8px;
-}
-
-
-.lang {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 4px;
-  width: 100%;
-  height: 24px;    
 }
 
 .lang li {
@@ -243,6 +221,24 @@ li img {
   background: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
+}
+
+.canopy ul li {
+  color: #7a869a;
+  width: 290px;
+  height: 72px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 8px;
+}
+
+.lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 4px;
+  width: 100%;
+  height: 24px;
 }
 
 button {
