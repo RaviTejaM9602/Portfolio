@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,42 +7,48 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.intro {
+header {
+  height: 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+header a {
+  text-decoration: none;
+  color: #6070ff;
   font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.top i {
+  color: #6070ff;
+  width: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.intro {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
   width: 327px;
-  font-size: 40px;
-  margin-top: 70px;
+  font-size: 35px;
+  line-height: 35px;
+  margin-top: 100px;
   margin-bottom: 12px;
-  height: 150px;
   color: #172b4d;
 }
 
 .head-section {
-  width: 360px;
+  max-width: 480px;
   height: 720px;
-}
-
-.top h1 {
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  height: 8px;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 20px;
-  color: #6070ff;
-  margin: 36px 26px;
-}
-
-.d-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.top i {
-  margin: 40px 32px;
-  color: #6070ff;
-  width: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 h6 {
@@ -57,7 +65,8 @@ h6 {
 .main-section {
   background-image: url("images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
-  height: 96vh;
+  background-size: contain;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -65,9 +74,9 @@ h6 {
 }
 
 .description p {
-  font-family: 'Poppins', sans-serif;
-  height: 146px;
-  width: 294px;
+  height: 156px;
+  width: 100%;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
@@ -100,7 +109,7 @@ span {
   justify-content: flex-end;
 }
 
-a {
+.icons a {
   color: gray;
 }
 
