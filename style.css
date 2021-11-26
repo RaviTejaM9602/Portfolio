@@ -25,18 +25,19 @@ header a {
 }
 
 .top i {
-  color: #6070ff;
   width: 30px;
+  color: #6070ff;
   padding: 0;
   margin: 0;
 }
 
 .intro {
   font-family: "Poppins", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   font-style: normal;
+  align-items: center;
   width: 327px;
-  font-size: 45px;
+  font-size: 40px;
   line-height: 52px;
   margin-top: 100px;
   margin-bottom: 12px;
@@ -44,7 +45,7 @@ header a {
 }
 
 .head-section {
-  max-width: 480px;
+  max-width: 100vh;
   height: 720px;
   margin: 0;
   padding: 0;
@@ -73,11 +74,9 @@ h6 {
 }
 
 .description p {
-  height: 156px;
-  width: 100%;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 26px;
   color: #344563;
 }
 
