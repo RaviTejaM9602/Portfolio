@@ -143,3 +143,125 @@ li img {
   width: 15px;
   height: 20px;
 }
+
+/* portfolio work section */
+
+.work-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 100px 0;
+  grid-template-areas:
+    "img-1 img-1 img-1 img-1"
+    "img-2 img-2 img-2 img-2"
+    "img-3 img-3 img-3 img-3"
+    "img-4 img-4 img-4 img-4";
+  justify-items: center;
+  align-items: center;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 330px;
+  min-height: 570px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.img-1 { grid-area: img-1; }
+.img-2 { grid-area: img-2; }
+.img-3 { grid-area: img-3; }
+.img-4 { grid-area: img-4; }
+
+.img image {
+  height: 220px;
+}
+
+.img h2 {
+  width: 295px;
+  height: 36px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #172b4d;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.canopy {
+  display: flex;
+  width: 100%;
+  color: #172b4d;
+  align-items: center;
+}
+
+.canopy h4 {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.canopy ul {
+  display: flex;
+  align-items: center;
+}
+
+.canopy ul li {
+  display: flex;
+  align-items: center;
+}
+
+.canopy ul .sub-lang {
+  color: #7a869a;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 8px;
+}
+
+.canopy ul img {
+  margin: 0 12px;
+  width: 8px;
+  height: 8px;
+}
+
+.img-description {
+  width: 295px;
+  text-align: left;
+  color: #323c4e;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 20px 0  12px;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+}
+
+.lang .prog-lang {
+  color: #6070ff;
+  padding: 4px 12px;
+  margin-right: 8px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+button {
+  width: 125px;
+  height: 50px;
+  color: #6070ff;
+  border: 1px solid #6070ff;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 25px;
+}
