@@ -5,13 +5,14 @@ My_Portfolio_Website Using Flexbox
 
 > One paragraph statement about the project.
 
-![screenshot](./app_Hello_Microverse_first.png)
+![screenshot](./images/portfoli_website.png)
 
 Additional description about the project and its features.
 
 ## Built With
 
 HTML and CSS
+Using Grid and Flexbox
 
 ## Live Demo
 
@@ -27,7 +28,7 @@ HTML and CSS
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-Flexbox, Images (Concepts in CSS)
+Grid, Flexbox, Images (Concepts in CSS)
 ### Setup
 Linter Setup 
 
