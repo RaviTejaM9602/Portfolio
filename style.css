@@ -226,6 +226,12 @@ li img {
   line-height: 8px;
 }
 
+.sub-skills img {
+  width: 48px;
+  height: 48px;
+  margin: 9px 12px 9px 16px;
+}
+
 .canopy ul img {
   margin: 0 12px;
   width: 8px;
@@ -264,4 +270,34 @@ button {
   background-color: #fff;
   border-radius: 8px;
   margin-top: 25px;
+}
+
+.skill-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+}
+
+.skill-section li h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 40px 0 24px;
+}
+
+.core-skills .sub-skills {
+  display: flex;
+  align-items: center;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.sub-skills p {
+  font-weight: 500;
+  font-size: 15px;
+  color: #253858;
 }
