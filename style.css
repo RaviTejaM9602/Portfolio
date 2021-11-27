@@ -301,3 +301,28 @@ button {
   font-size: 15px;
   color: #253858;
 }
+
+.resume-button {
+  margin-top: 14px;
+}
+
+.about-section {
+  background-color: #fff;
+  border-radius: 0 60px 0 0;
+  padding: 24px;
+  min-height: 700px;
+}
+
+.about-container h2 {
+  width: 295px;
+  height: 36px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #172b4d;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
