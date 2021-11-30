@@ -332,3 +332,27 @@ button {
   border-radius: 60px 0 0 0;
   padding: 20px 24px;
 }
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #ffffff;
+  margin-top: 104px;
+  margin-bottom: 12px;
+}
+
+.contact-container p {
+  width: 327px;
+  font-weight: normal;
+  color: #ebebff;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 12px 24px;
+}
