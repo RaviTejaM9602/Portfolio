@@ -354,10 +354,11 @@ button {
   color: #ebebff;
   font-size: 20px;
   line-height: 28px;
-  margin: 12px 24px;
+  margin: 12px 24px 50px 24px;
+  text-align: center;
 }
 
-.input-section li input {
+.input-section input {
   margin-bottom: 18px;
   width: 100%;
   background: #fff;
@@ -369,7 +370,7 @@ button {
   color: #172b4d;
 }
 
-.input-section li textarea {
+.input-section textarea {
   margin-bottom: 4px;
   width: 100%;
   background: #fff;
