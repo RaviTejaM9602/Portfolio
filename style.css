@@ -320,3 +320,87 @@ button {
   margin-top: 12px;
   margin-bottom: 12px;
 }
+
+/* Footer Section */
+
+.contact-section {
+  width: 375px;
+  background-image: url(images/footer_images/contact\ form\ shapes-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: #6070ff;
+  background-position: 100% 21px;
+  border-radius: 60px 0 0 0;
+  padding: 20px 24px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  margin-top: 104px;
+  margin-bottom: 12px;
+}
+
+.contact-container p {
+  width: 327px;
+  font-weight: normal;
+  color: #ebebff;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 12px 24px 50px 24px;
+  text-align: center;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-section input {
+  margin-bottom: 18px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+.input-section textarea {
+  margin-bottom: 4px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+}
+
+.input-section .btn {
+  padding: 12px 16px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  background: #fff;
+  border-radius: 8px;
+  width: fit-content;
+}

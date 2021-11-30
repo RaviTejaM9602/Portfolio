@@ -12,7 +12,7 @@ Additional description about the project and its features.
 ## Built With
 
 HTML and CSS
-Using Grid and Flexbox
+Using Grid and Flexbox , forms etc 
 
 ## Live Demo
 
