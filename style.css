@@ -343,7 +343,7 @@ button {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #ffffff;
+  color: #fff;
   margin-top: 104px;
   margin-bottom: 12px;
 }
@@ -360,25 +360,25 @@ button {
 .input-section li input {
   margin-bottom: 18px;
   width: 100%;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 16px;
   font-size: 17px;
   line-height: 20px;
-  color: #172b4D;
+  color: #172b4d;
 }
 
-.input-section li textarea{
+.input-section li textarea {
   margin-bottom: 4px;
   width: 100%;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 16px;
   font-size: 17px;
   line-height: 20px;
-  color: #172b4D;
+  color: #172b4d;
 }
 
 input::placeholder,
@@ -394,7 +394,7 @@ textarea::placeholder {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   width: fit-content;
 }
