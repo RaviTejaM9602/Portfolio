@@ -320,3 +320,15 @@ button {
   margin-top: 12px;
   margin-bottom: 12px;
 }
+
+/* Footer Section */
+
+.contact-section {
+  width: 375px;
+  background-image: url(images/footer_images/contact\ form\ shapes-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: #6070ff;
+  background-position: 100% 21px;
+  border-radius: 60px 0 0 0;
+  padding: 20px 24px;
+}
