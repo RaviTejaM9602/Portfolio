@@ -358,6 +358,11 @@ button {
   text-align: center;
 }
 
+.input-section {
+  display: flex;
+  flex-direction: column;
+}
+
 .input-section input {
   margin-bottom: 18px;
   width: 100%;
