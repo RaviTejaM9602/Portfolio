@@ -252,12 +252,13 @@ li img {
   font-size: 12px;
 }
 
-button {
+.content button {
   color: #6070ff;
   border: 1px solid #6070ff;
   background-color: #fff;
   border-radius: 8px;
   margin-top: 25px;
+  padding: 12px;
 }
 
 .skill-section {
@@ -539,6 +540,14 @@ textarea::placeholder {
   img .img-2,
   img .img-4 {
     order: 2;
+  }
+
+  .content-1 button {
+    color: #6070ff;
+    border: 1px solid #6070ff;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 25px;
   }
 
   .about-desk {
