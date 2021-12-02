@@ -121,8 +121,7 @@ span {
 }
 
 .icons {
-  display: flex;
-  margin: -10px;
+  margin: 10px;
 }
 
 .icons i {
@@ -293,6 +292,11 @@ li img {
 
 .resume-button {
   margin-top: 14px;
+  color: #396df2;
+  padding: 12px;
+  border: 1px solid  #396df2;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 .about-section {
@@ -396,8 +400,10 @@ textarea::placeholder {
   font-size: 17px;
   line-height: 24px;
   background: #fff;
-  border-radius: 8px;
+  border-radius: 4px;
   width: fit-content;
+  margin-top: 12px;
+  border: 1px solid  #396df2;
 }
 
 /* Desktop Version */
@@ -582,6 +588,14 @@ textarea::placeholder {
 
   .contact-container {
     width: 600px;
+  }
+
+  .footer-section .sub-icon {
+    margin-left: -56px;
+  }
+
+  .footer-section .desk-icon {
+    margin-left: -60px;
   }
 
   form {
