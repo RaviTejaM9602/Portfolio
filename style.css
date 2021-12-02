@@ -402,7 +402,6 @@ textarea::placeholder {
 /* Desktop Version */
 
 @media screen and (min-width: 992px) {
-
   header {
     display: flex;
     justify-content: space-between;
@@ -518,7 +517,6 @@ textarea::placeholder {
     margin-bottom: 10px;
   }
 
-  
   .img li img {
     color: gray;
     width: 10px;
@@ -538,8 +536,8 @@ textarea::placeholder {
     gap: 46px;
   }
 
-  .img-2 img,
-  .img-4 img {
+  img .img-2,
+  img .img-4 {
     order: 2;
   }
 
@@ -553,7 +551,7 @@ textarea::placeholder {
     flex-direction: row;
     gap: 16px;
   }
- 
+
   .core-skills .sub-skills img {
     width: 48px;
     height: 48px;
@@ -567,18 +565,18 @@ textarea::placeholder {
     padding: 12px;
   }
 
- .contact-section {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.contact-container {
-  width: 600px;
-}
+  .contact-container {
+    width: 600px;
+  }
 
-form {
-   width: 600px;
-   align-items: center;   
- }
+  form {
+    width: 600px;
+    align-items: center;
+  }
 }
