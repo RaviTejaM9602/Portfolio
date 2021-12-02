@@ -1,3 +1,4 @@
+/* stylelint-disable no-missing-end-of-source-newline */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 * {
@@ -7,17 +8,25 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background-color: #e5e5e5;
+}
+
 ul li {
   list-style: none;
 }
 
+.nav-bar {
+  display: none;
+}
+
 header {
-  height: 50px;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  background-color: #fff;
 }
 
 header a {
@@ -29,7 +38,6 @@ header a {
 }
 
 .top i {
-  width: 30px;
   color: #6070ff;
   padding: 0;
   margin: 0;
@@ -40,7 +48,6 @@ header a {
   font-weight: 700;
   font-style: normal;
   align-items: center;
-  width: 327px;
   font-size: 40px;
   line-height: 52px;
   margin-top: 100px;
@@ -49,10 +56,17 @@ header a {
 }
 
 .head-section {
-  max-width: 100vh;
-  height: 720px;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/header-shapes\ mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  border-radius: 0 0 0 60px;
 }
 
 h6 {
@@ -61,20 +75,11 @@ h6 {
   padding-top: 6px;
 }
 
-.signal_icon {
-  display: flex;
-  justify-content: space-between;
-}
-
 .main-section {
-  background-image: url("images/header-shapes\ mobile.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 24px 24px 100px 24px;
 }
 
 .description p {
@@ -140,7 +145,6 @@ span {
 
 li img {
   color: gray;
-  width: 15px;
   height: 20px;
 }
 
@@ -153,14 +157,13 @@ li img {
 .work-container {
   margin: 50px auto;
   display: flex;
+  flex-direction: column;
 }
 
 .img {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  width: 330px;
-  min-height: 570px;
   background: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
@@ -177,8 +180,6 @@ li img {
 }
 
 .img h2 {
-  width: 295px;
-  height: 36px;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -221,19 +222,14 @@ li img {
 }
 
 .sub-skills img {
-  width: 48px;
-  height: 48px;
   margin: 9px 12px 9px 16px;
 }
 
 .canopy ul img {
   margin: 0 12px;
-  width: 8px;
-  height: 8px;
 }
 
 .img-description {
-  width: 295px;
   text-align: left;
   color: #323c4e;
   font-size: 15px;
@@ -257,8 +253,6 @@ li img {
 }
 
 button {
-  width: 125px;
-  height: 50px;
   color: #6070ff;
   border: 1px solid #6070ff;
   background-color: #fff;
@@ -308,8 +302,6 @@ button {
 }
 
 .about-container h2 {
-  width: 295px;
-  height: 36px;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -323,8 +315,11 @@ button {
 
 /* Footer Section */
 
+.contact-desk {
+  background-color: #fff;
+}
+
 .contact-section {
-  width: 375px;
   background-image: url(images/footer_images/contact\ form\ shapes-mobile.svg);
   background-repeat: no-repeat;
   background-color: #6070ff;
@@ -349,7 +344,6 @@ button {
 }
 
 .contact-container p {
-  width: 327px;
   font-weight: normal;
   color: #ebebff;
   font-size: 20px;
@@ -403,4 +397,188 @@ textarea::placeholder {
   background: #fff;
   border-radius: 8px;
   width: fit-content;
+}
+
+/* Desktop Version */
+
+@media screen and (min-width: 992px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  header a {
+    text-decoration: none;
+    color: #6070ff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 30px;
+  }
+
+  .top i {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 90px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .nav-bar ul {
+    margin-right: 30px;
+  }
+
+  .nav-bar li {
+    margin: 0 10px;
+  }
+
+  .head-section {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/Desktop/Header\ bg@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .main-section {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0 100px 0;
+  }
+
+  .intro {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    align-items: center;
+    font-size: 48px;
+    line-height: 60px;
+    margin-top: 100px;
+    margin-bottom: 12px;
+    margin-left: 60px;
+    color: #091e42;
+  }
+
+  .intro span {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .description p {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+    margin: 12px 0;
+    margin-left: 60px;
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0 25px 60px;
+    justify-content: flex-end;
+  }
+
+  .icons a {
+    color: gray;
+  }
+
+  .icons {
+    display: flex;
+    margin: -10px;
+  }
+
+  .icons i {
+    color: #505f79;
+    font-size: 20px;
+  }
+
+  .icons li {
+    text-decoration: none;
+    padding: 12px;
+  }
+
+  .footer-section h5 {
+    color: #7f8cff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  
+  .img li img {
+    color: gray;
+    width: 10px;
+    height: 10px;
+  }
+
+  .img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 24px;
+    gap: 46px;
+  }
+
+  .img-2 img,
+  .img-4 img {
+    order: 2;
+  }
+
+  .about-desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .core-skills {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+ 
+  .core-skills .sub-skills img {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+  }
+
+  .core-skills .sub-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+ .contact-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+.contact-container {
+  width: 600px;
+}
+
+form {
+   width: 600px;
+   align-items: center;   
+ }
 }
