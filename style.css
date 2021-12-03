@@ -67,6 +67,7 @@ header a {
   background-size: cover;
   background-color: #fff;
   border-radius: 0 0 0 60px;
+  width: 100%;
 }
 
 h6 {
@@ -131,7 +132,7 @@ span {
 
 .icons li {
   text-decoration: none;
-  padding: 12px;
+  display: inline;
 }
 
 .footer-section h5 {
@@ -157,6 +158,7 @@ li img {
   margin: 50px auto;
   display: flex;
   flex-direction: column;
+  padding: 0 24px;
 }
 
 .img {
@@ -167,6 +169,8 @@ li img {
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 15px;
+  margin: 10px;
+  overflow-inline: initial;
 }
 
 .img-1 { grid-area: img-1; }
@@ -226,6 +230,12 @@ li img {
 
 .canopy ul img {
   margin: 0 12px;
+}
+
+.img li img {
+  color: gray;
+  width: 10px;
+  height: 10px;
 }
 
 .img-description {
@@ -471,7 +481,6 @@ textarea::placeholder {
     line-height: 60px;
     margin-top: 100px;
     margin-bottom: 12px;
-    margin-left: 60px;
     color: #091e42;
   }
 
@@ -487,13 +496,11 @@ textarea::placeholder {
     line-height: 28px;
     color: #344563;
     margin: 12px 0;
-    margin-left: 60px;
   }
 
   .footer-section {
     display: flex;
     flex-direction: column;
-    margin: 12px 0 25px 60px;
     justify-content: flex-end;
   }
 
@@ -524,23 +531,20 @@ textarea::placeholder {
     margin-bottom: 10px;
   }
 
-  .img li img {
-    color: gray;
-    width: 10px;
-    height: 10px;
+  .work-container {
+    padding: 0 100px;
   }
 
   .img {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 24px;
     background: #fff;
     border: 1px solid #dfe1e6;
     box-sizing: border-box;
     border-radius: 8px;
     margin-top: 24px;
-    gap: 46px;
+    gap: 30px;
   }
 
   img .img-2,
@@ -588,14 +592,6 @@ textarea::placeholder {
 
   .contact-container {
     width: 600px;
-  }
-
-  .footer-section .sub-icon {
-    margin-left: -56px;
-  }
-
-  .footer-section .desk-icon {
-    margin-left: -60px;
   }
 
   form {
