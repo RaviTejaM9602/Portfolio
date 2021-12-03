@@ -417,6 +417,14 @@ textarea::placeholder {
   border: 1px solid  #396df2;
 }
 
+button:hover {
+  background-color: #396df2;
+}
+
+button:active {
+  background-color: rgb(80, 201, 80);
+}
+
 /* Desktop Version */
 
 @media screen and (min-width: 992px) {
