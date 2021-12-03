@@ -547,8 +547,7 @@ textarea::placeholder {
     gap: 30px;
   }
 
-  img .img-2,
-  img .img-4 {
+  .work-container:nth-child(even) img {
     order: 2;
   }
 
