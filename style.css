@@ -413,6 +413,7 @@ textarea::placeholder {
   border-radius: 4px;
   width: fit-content;
   margin-top: 12px;
+  color: #396df2;
   border: 1px solid  #396df2;
 }
 
@@ -533,6 +534,13 @@ textarea::placeholder {
 
   .work-container {
     padding: 0 100px;
+  }
+
+  .canopy ul .sub-lang {
+    color: #6b778c;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .img {
