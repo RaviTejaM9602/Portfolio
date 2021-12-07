@@ -380,6 +380,10 @@ li img {
   color: #172b4d;
 }
 
+.input-section label {
+  color: #fff;
+}
+
 .input-section textarea {
   margin-bottom: 4px;
   width: 100%;
