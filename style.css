@@ -136,7 +136,7 @@ span {
   display: inline;
 }
 
-.footer-section h5 {
+.footer-section h2 {
   color: #2438e4;
   font-weight: 500;
   font-size: 16px;
@@ -197,7 +197,7 @@ li img {
   align-items: center;
 }
 
-.canopy h4 {
+.canopy h2 {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 600;
