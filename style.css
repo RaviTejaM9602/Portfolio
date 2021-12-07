@@ -580,6 +580,11 @@ button:active {
     grid-template-columns: 1fr 1fr;
   }
 
+  .about-desk_1,
+  .about-desk_2 {
+    margin-left: 95px;
+  }
+
   .core-skills {
     display: flex;
     flex-direction: row;
