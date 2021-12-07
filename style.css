@@ -455,6 +455,14 @@ button:active {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+    transition-property: background-color, border-radius;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+  }
+
+  .nav-bar:hover {
+    background-color: cadetblue;
+    border-radius: 50%;
   }
 
   .nav-bar ul {
