@@ -119,6 +119,7 @@ span {
 
 .icons a {
   color: gray;
+  margin-right: 12px;
 }
 
 .icons {
@@ -149,11 +150,6 @@ li img {
 }
 
 /* portfolio work section */
-.work-section {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
 .work-container {
   margin: 50px auto;
   display: flex;
@@ -178,8 +174,8 @@ li img {
 .img-3 { grid-area: img-3; }
 .img-4 { grid-area: img-4; }
 
-.img image {
-  height: 220px;
+.img img {
+  width: 100%;
 }
 
 .img h2 {
