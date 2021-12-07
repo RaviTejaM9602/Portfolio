@@ -31,7 +31,7 @@ header {
 
 header a {
   text-decoration: none;
-  color: #6070ff;
+  color: #1b31f0;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -137,7 +137,7 @@ span {
 }
 
 .footer-section h5 {
-  color: #7f8cff;
+  color: #2438e4;
   font-weight: 500;
   font-size: 16px;
   line-height: 10px;
@@ -249,7 +249,7 @@ li img {
 }
 
 .lang .prog-lang {
-  color: #6070ff;
+  color: #2836ba;
   padding: 4px 12px;
   margin-right: 8px;
   background-color: #ebebff;
@@ -258,7 +258,7 @@ li img {
 }
 
 .content button {
-  color: #6070ff;
+  color: #16218a;
   border: 1px solid #6070ff;
   background-color: #fff;
   border-radius: 8px;
