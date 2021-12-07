@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
   integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
-  crossorigin="anonymous">  
+  crossorigin="anonymous">
   <link rel="stylesheet" href="style.css"> 
   <title>Portfolio_Website</title>
 </head>
@@ -16,8 +16,13 @@
   <header>    
     <a href="/">My Logo</a>
     <nav class="top">        
-      <i class="fas fa-bars"></i>
-    </nav>     
+          <i class="fas fa-bars"></i>
+      <ul class="nav-bar">
+        <li>Portfolio</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>    
   </header>  
     
      <!--Main Section -->
@@ -44,14 +49,16 @@
           </ul>     
       </section>  
    </section>
-
+  </main>
+  
       <!--Work Section -1  -->
    
-      <section class="work-section">
+  <section class="work-section">
         <div class="work-container">
             <div class="img img-1">
-              <img src="./images/Snapshoot1.png" alt="first-work">
-              <h2>Tonic</h2>
+              <img src="./images/Desktop/Grid-1/Snapshoot_Portfolio_1.svg" alt="first-work">
+              <div class="content">
+                <h2>Tonic</h2>
               <div class="canopy">
                   <h4>Canopy</h4>
                     <ul>
@@ -74,16 +81,18 @@
                   <li class="prog-lang">Javascript</li>
               </ul>
               <button>See Project</button>
-          </div> 
-        </div>  
+              </div>          
+          </div>
+        </div>
 
 
         <!--Work Section 2-->
 
         <div class="work-container">
           <div class="img img-2">
-            <img src="./images/Snapshoot2.png" alt="second-work">
-            <h2>Multi-Post</h2>
+            <img src="./images/Desktop/Grid-2/Snapshoot_Portfolio_2.svg" alt="second-work">
+            <div class="content">
+              <h2>Multi-Post</h2>
             <h2>Stories</h2>
             <div class="canopy">
                 <h4>Canopy</h4>
@@ -107,6 +116,7 @@
                 <li class="prog-lang">Javascript</li>
             </ul>
             <button>See Project</button>
+            </div>            
         </div> 
       </div> 
       
@@ -114,8 +124,9 @@
 
       <div class="work-container">
         <div class="img img-3">
-          <img src="./images/Snapshoot3.png" alt="third-work">
-          <h2>Tonic</h2>
+          <img src="./images/Desktop/Grid-3/Snapshoot_Portfolio_3.svg" alt="third-work">
+          <div class="content">
+            <h2>Tonic</h2>
           <div class="canopy">
               <h4>Canopy</h4>
                 <ul>
@@ -138,6 +149,7 @@
               <li class="prog-lang">Javascript</li>
           </ul>
           <button>See Project</button>
+          </div>          
       </div> 
     </div>  
 
@@ -145,62 +157,67 @@
     <!--work section 4-->
     <div class="work-container">
       <div class="img img-4">
-        <img src="./images/Snapshoot4.png" alt="first-work">
-        <h2>Multi-Post</h2>
-        <h2>Stories</h2>
-        <div class="canopy">
-            <h4>Canopy</h4>
-              <ul>
-                <li>
-                  <img src="./images/Counter1.png" alt="Counter">
-                </li>
-                <li class="sub-lang">Back End Dev</li>
-                <li>
-                  <img src="./images/Counter1.png" alt="Counter">
-                </li> 
-                <li class="sub-lang">2015</li>
-              </ul>
+        <img src="./images/Desktop/Grid-4/Snapshoot_Portfolio_4.svg" alt="first-work">
+        <div class="content">
+          <h2>Multi-Post</h2>
+          <h2>Stories</h2>
+          <div class="canopy">
+              <h4>Canopy</h4>
+                <ul>
+                  <li>
+                    <img src="./images/Counter1.png" alt="Counter">
+                  </li>
+                  <li class="sub-lang">Back End Dev</li>
+                  <li>
+                    <img src="./images/Counter1.png" alt="Counter">
+                  </li> 
+                  <li class="sub-lang">2015</li>
+                </ul>
+          </div>
+          <p class="img-description">A daily selection of privately 
+              personalized reads; no accounts or sign-ups required.
+          </p>
+          <ul class="lang">
+              <li class="prog-lang">HTML</li>
+              <li class="prog-lang">CSS</li>
+              <li class="prog-lang">Javascript</li>
+          </ul>
+          <button>See Project</button> 
         </div>
-        <p class="img-description">A daily selection of privately 
-            personalized reads; no accounts or sign-ups required.
-        </p>
-        <ul class="lang">
-            <li class="prog-lang">HTML</li>
-            <li class="prog-lang">CSS</li>
-            <li class="prog-lang">Javascript</li>
-        </ul>
-        <button>See Project</button>
     </div> 
-  </div>  
-
- </section>
+  </div> 
+</section>
 
  
    <!--About Section-->
 
-   <section class="about-section">
-    <div class="about-container">
-      <div>
-        <h2>About</h2>
-        <h2>Myself</h2>
+  <section class="about-section about-desk">
+    <div class="about-desk_1">
+      <div class="about-container">
+        <div>
+         <h2>About</h2>
+         <h2>Myself</h2>
+        </div>
+       <p class="description">I’m a software developer! I can help you build a product , 
+          feature or website Look through some of my work and experience!
+          If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
       </div>
-      <p class="description">I’m a software developer! I can help you build a product , 
-         feature or website Look through some of my work and experience!
-         If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+ 
+       <section class="footer-section">
+         <h5 class="sub-icon">LET'S CONNECT</h5>      
+           <ul class="icons">
+             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+             <li><a href="#"><img src="images/Vector.svg" alt="Vector" ></a></li>         
+             <li><a href="#"><i class="fab fa-github"></i></a></li>            
+             <li><a href="#"><img src="images/Finger.svg" alt="Finger"></a></li>
+           </ul>     
+       </section>
+ 
+     <button class="resume-button">Get my resume</button>
     </div>
-
-      <section class="footer-section">
-        <h5 class="sub-icon">LET'S CONNECT</h5>      
-          <ul class="icons">
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="#"><img src="images/Vector.svg" alt="Vector" ></a></li>         
-            <li><a href="#"><i class="fab fa-github"></i></a></li>            
-            <li><a href="#"><img src="images/Finger.svg" alt="Finger"></a></li>
-          </ul>     
-      </section>
-
-    <button class="resume-button">Get my resume</button>
+    
+    <div class="about-desk_2">
         <ul class="skill-section"> 
           <li class="languages">
             <h3 class="about-list"><span>Languages</span><i class="fas fa-chevron-down"></i></h3>
@@ -226,28 +243,31 @@
             <h3 class="about-list"><span>Skills</span> <i class="fas fa-chevron-right"></i></h3>
           </li>    
         </ul>
-    </section>
+    </div> 
+   </section>
 
   
-  <footer class="contact-section">
-     <div class="contact-container">
+  <footer class="contact-desk">
+      <div class="contact-section">
+         <div class="contact-container">
             <h2>Contact me</h2>
-          <div> 
+           <div> 
              <p>If you have an application you are interested in developing,
               a feature that you need built or a project that needs coding.
               I’d love to help with it</p> 
             </div>
-        </div>
-        
-        <form action="https://formspree.io/f/xnqwaogj"
+         </div>
+         
+       <form action="https://formspree.io/f/xnqwaogj"
         method="POST"  class="input-section" >
           <input type="text" placeholder="your name" maxlength="30" required>
           <input type="email" placeholder="Enter your email" required>
           <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
           <button class="btn" type="submit">Get It Touch</button>
         </form>      
-        
+      </div>  
   </footer>
-</main> 
+
+ 
 </body>
 </html>
