@@ -22,17 +22,32 @@
 <body>
   <!--Header Section -->
 
-  <header>    
+  <header id="home">    
     <a href="/">My Logo</a>
     <nav class="top">        
-          <i class="fas fa-bars"></i>
+          <i onclick="openNav()" class="fas fa-bars"></i>
       <ul class="nav-bar">
         <li>Portfolio</li>
         <li>About</li>
         <li>Contact</li>
       </ul>
     </nav>    
-  </header>  
+  </header> 
+
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&timesa</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="#home" onclick="closeNav()" >Portfolio</a>
+      <a href="#about" onclick="closeNav()" >About</a>
+      <a href="#contact" onclick="closeNav()" >Contact</a>
+    </div>
+  
+  </div>
+  
     
      <!--Main Section -->
   <main class="head-section"> 
@@ -48,12 +63,12 @@
       </article>
       
       <section class="footer-section">
-        <h2>LET'S CONNECT</h2>      
+        <h5>LET'S CONNECT</h5>      
           <ul class="icons">
-            <li><a href="https://mobile.twitter.com/RaviTejaMekala1"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/ravi-teja-8499a31b9/"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
             <li><a href="#"><img src="images/Vector.svg" alt="Vector" ></a></li>         
-            <li><a href="https://github.com/RaviTejaM9602"><i class="fab fa-github"></i></a></li>            
+            <li><a href="#"><i class="fab fa-github"></i></a></li>            
             <li><a href="#"><img src="images/Finger.svg" alt="Finger"></a></li>
           </ul>     
       </section>  
@@ -69,7 +84,7 @@
               <div class="content">
                 <h2>Tonic</h2>
               <div class="canopy">
-                  <h2>Canopy</h2>
+                  <h4>Canopy</h4>
                     <ul>
                       <li>
                         <img src="./images/Counter1.png" alt="Counter">
@@ -104,7 +119,7 @@
               <h2>Multi-Post</h2>
             <h2>Stories</h2>
             <div class="canopy">
-                <h2>Canopy</h2>
+                <h4>Canopy</h4>
                   <ul>
                     <li>
                       <img src="./images/Counter1.png" alt="Counter">
@@ -137,7 +152,7 @@
           <div class="content">
             <h2>Tonic</h2>
           <div class="canopy">
-              <h2>Canopy</h2>
+              <h4>Canopy</h4>
                 <ul>
                   <li>
                     <img src="./images/Counter1.png" alt="Counter">
@@ -171,7 +186,7 @@
           <h2>Multi-Post</h2>
           <h2>Stories</h2>
           <div class="canopy">
-              <h2>Canopy</h2>
+              <h4>Canopy</h4>
                 <ul>
                   <li>
                     <img src="./images/Counter1.png" alt="Counter">
@@ -200,7 +215,7 @@
  
    <!--About Section-->
 
-  <section class="about-section about-desk">
+  <section id="about" class="about-section about-desk">
     <div class="about-desk_1">
       <div class="about-container">
         <div>
@@ -213,12 +228,12 @@
       </div>
  
        <section class="footer-section">
-         <h2 class="sub-icon">LET'S CONNECT</h2>      
+         <h5 class="sub-icon">LET'S CONNECT</h5>      
            <ul class="icons">
-             <li><a href="https://mobile.twitter.com/RaviTejaMekala1"><i class="fab fa-twitter"></i></a></li>
-             <li><a href="https://www.linkedin.com/in/ravi-teja-8499a31b9/"><i class="fab fa-linkedin-in"></i></a></li>
+             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
              <li><a href="#"><img src="images/Vector.svg" alt="Vector" ></a></li>         
-             <li><a href="https://github.com/RaviTejaM9602"><i class="fab fa-github"></i></a></li>            
+             <li><a href="#"><i class="fab fa-github"></i></a></li>            
              <li><a href="#"><img src="images/Finger.svg" alt="Finger"></a></li>
            </ul>     
        </section>
@@ -256,7 +271,7 @@
    </section>
 
   
-  <footer class="contact-desk">
+  <footer id="contact" class="contact-desk">
       <div class="contact-section">
          <div class="contact-container">
             <h2>Contact me</h2>
@@ -269,17 +284,14 @@
          
        <form action="https://formspree.io/f/xnqwaogj"
         method="POST"  class="input-section" >
-          <label for="name">Name :</label>
-          <input type="text" id="name" placeholder="your name" maxlength="30" required>
-          <label for="email">Email :</label>
-          <input type="email" id="email" placeholder="Enter your email" required>
-          <label for="textarea">Email :</label>
-          <textarea id="textarea" name="message" placeholder="Write your message here" maxlength="500" required></textarea>
+          <input type="text" placeholder="your name" maxlength="30" required>
+          <input type="email" placeholder="Enter your email" required>
+          <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
           <button class="btn" type="submit">Get It Touch</button>
         </form>      
       </div>  
   </footer>
 
- 
+  <script src="./mobile.js"></script>
 </body>
 </html>
