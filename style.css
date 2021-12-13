@@ -11,6 +11,10 @@ body {
   background-color: #e5e5e5;
 }
 
+.blur {
+  filter: blur(8px);
+}
+
 ul li {
   list-style: none;
 }
@@ -623,7 +627,7 @@ button:active {
   }
 }
 
-.overlay {
+.overlay-bg {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
@@ -637,26 +641,23 @@ button:active {
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
-.overlay .closebtn {
+.overlay-bg .closebtn {
   padding: 0;
-  margin: 0;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.299);
-  display: block; /* Display block instead of inline */
+  float: right;
+  margin: 24px;
   transition: 0.3s; /* Transition effects on hover (color) */
   border: 2px solid #67798e;
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  margin-top: 90px;
 }
 
 .overlay-content a {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 32px;
   line-height: 44px;
   color: #fff;
@@ -668,29 +669,20 @@ button:active {
 }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a:hover,
-.overlay a:focus {
+.overlay-bg a:hover,
+.overlay-bg a:focus {
   color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-  .overlay a {
+  .overlay-bg a {
     font-size: 20px;
   }
 
-  .overlay .closebtn {
+  .overlay-bg .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
 }
-

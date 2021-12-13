@@ -22,10 +22,10 @@
 <body>
   <!--Header Section -->
 
-  <header id="home">    
+  <header class="main_menu" id="home">    
     <a href="/">My Logo</a>
     <nav class="top">        
-          <i onclick="openNav()" class="fas fa-bars"></i>
+          <i class="fas fa-bars"></i>
       <ul class="nav-bar">
         <li>Portfolio</li>
         <li>About</li>
@@ -34,17 +34,19 @@
     </nav>    
   </header> 
 
-  <div id="myNav" class="overlay">
+  <div id="myNav_mobile" class="overlay-bg">
 
     <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&timesa</a>
+    <a class="closebtn">
+      <img src="./images/mobile_menu/Icon.png" alt="Close_icon">
+    </a>
   
     <!-- Overlay content -->
-    <div class="overlay-content">
-      <a href="#home" onclick="closeNav()" >Portfolio</a>
-      <a href="#about" onclick="closeNav()" >About</a>
-      <a href="#contact" onclick="closeNav()" >Contact</a>
-    </div>
+    <ul class="overlay-content">
+      <li class="overlay-mobile"><a href="#home">Portfolio</a></li>
+      <li class="overlay-mobile"><a href="#about">About</a></li>
+      <li class="overlay-mobile"><a href="#contact">Contact</a></li>
+    </ul>
   
   </div>
   
