@@ -11,10 +11,6 @@ body {
   background-color: #e5e5e5;
 }
 
-.blur {
-  filter: blur(8px);
-}
-
 ul li {
   list-style: none;
 }
