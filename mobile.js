@@ -15,19 +15,14 @@ function closeMobileMenu() {
 
 closebtn.addEventListener('click', closeMobileMenu);
 overlayContent.addEventListener('click', closeMobileMenu);
-
-
-
-//pop-up window
-
-const work = document.querySelector('#works');
+//work section window
 const projects = [
   {
     id: 1,
     title: 'Tonic',
     image: './images/Desktop/Grid-1/Snapshoot_Portfolio_1.svg',
     imageAlt: 'First Project Image',
-    detailsHead : 'CANOPY',
+    detailsHead: 'CANOPY',
     details: ['Back End Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -38,9 +33,9 @@ const projects = [
   {
     id: 2,
     title: 'Multi-Post Stories',
-    image: './images/',
+    image: './images/Desktop/Grid-2/Snapshoot_Portfolio_2.svg',
     imageAlt: 'Second Project Image',
-    detailsHead : 'CANOPY',
+    detailsHead: 'CANOPY',
     details: ['Back End Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -51,9 +46,9 @@ const projects = [
   {
     id: 3,
     title: 'Tonic',
-    image: './images/Desktop/Grid-1/Snapshoot_Portfolio_3.svg',
+    image: './images/Desktop/Grid-3/Snapshoot_Portfolio_3.svg',
     imageAlt: 'Third Project Image',
-    detailsHead : 'CANOPY',
+    detailsHead: 'CANOPY',
     details: ['Back End Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -64,9 +59,9 @@ const projects = [
   {
     id: 4,
     title: 'Multi-Post Stories',
-    image: './images/Desktop/Grid-1/Snapshoot_Portfolio_4.svg',
+    image: './images/Desktop/Grid-4/Snapshoot_Portfolio_4.svg',
     imageAlt: 'Fourth Project Image',
-    detailsHead : 'CANOPY',
+    detailsHead: 'CANOPY',
     details: ['Back End Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -78,9 +73,7 @@ const projects = [
 
 
 for (let i=0; i < projects.length; i++){
-  document.querySelector('#home').innerHTML += 
-  
-  `<div class="work-container" id="project-${projects[i].id}">
+  document.querySelector('#home').innerHTML += `<div class="work-container" id="project-${projects[i].id}">
   <div class="img img-1">
     <img src="${projects[i].image}" alt="${projects[i].imageAlt}">
     <div class="content">
@@ -88,7 +81,7 @@ for (let i=0; i < projects.length; i++){
     <div class="canopy">
         <h4>${projects[i].detailsHead}</h4>
           <ul>
-            ${projects[i].details.map(skill=>{
+            ${projects[i].details.map(skill=> {
               return `<li>
               <img src="./images/Counter1.png" alt="Counter">
             </li>
@@ -99,7 +92,7 @@ for (let i=0; i < projects.length; i++){
     <p class="img-description">${projects[i].description}
     </p>
     <ul class="lang">
-    ${projects[i].langs.map(lang=>{
+    ${projects[i].langs.map(lang=> {
       return `<li class="prog-lang">${lang}</li>`
     }).join('')}    
     </ul>
@@ -108,5 +101,3 @@ for (let i=0; i < projects.length; i++){
 </div>
 </div>`
 }
-
-
