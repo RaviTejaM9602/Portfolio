@@ -4,7 +4,6 @@ const myNavMenu = document.getElementById('myNav_mobile');
 const overlayContent = document.querySelector('.overlay-content');
 
 function openMobileMenu() {
-  // creat layout
   myNavMenu.style.width = '100%';
 }
 
