@@ -642,8 +642,7 @@ button:active {
   color: rgba(0, 0, 0, 0.299);
   float: right;
   margin: 24px;
-  transition: 0.3s; /* Transition effects on hover (color) */
-  border: 2px solid #67798e;
+  transition: 0.3s;
 }
 
 /* Position the content inside the overlay */
