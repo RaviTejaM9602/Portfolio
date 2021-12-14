@@ -700,7 +700,6 @@ button:active {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   overflow: auto;
 }
 
@@ -709,8 +708,8 @@ button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 500;
+  font-size: 30px;
   line-height: 50px;
 }
 
@@ -728,16 +727,16 @@ button:active {
   color: #6070ff;
 }
 
-.modal-subtitle {
+.modal .modal-subTitle {
   display: flex;
 }
 
-.modal-subtitle ul li {
-  margin: 20px;
-}
-
-.modal > img {
-  width: 100%;
+.modal .modal-subTitle li img {
+  color: #6b778c;
+  height: 10px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-content {
@@ -750,13 +749,21 @@ button:active {
 .modal-langauges {
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 
-.modal .modal-langauges ul li {
+.modal .modal-langauges li {
   color: #6070ff;
   padding: 4px 12px;
   margin-right: 8px;
   background-color: #ebebff;
   border-radius: 8px;
   font-size: 12px;
+}
+
+.modal-btns {
+  display: flex;
+  padding-top: 20px;
+  border-top: 1px solid #ebecf0;
+  gap: 20px;
 }

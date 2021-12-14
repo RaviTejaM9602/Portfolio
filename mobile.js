@@ -96,7 +96,7 @@ for (let i=0; i < projects.length; i++){
       return `<li class="prog-lang">${lang}</li>`
     }).join('')}    
     </ul>
-    <button>See Project</button>
+    <button id="peoject-${projects[i].id}">See Project</button>
     </div>          
 </div>
 </div>`
@@ -112,9 +112,9 @@ const languages = document.querySelector('.modal-content .modal-langauges');
 const githubLink = document.querySelector('.modal-content .github-link');
 const sourceLink = document.querySelector('.modal-content .source-link');
 
-document.querySelectorAll('.work-card button').forEach((btn) => {
+document.querySelectorAll('.work-container button').forEach((btn) => {
   btn.addEventListener('click', () => {
-    const id = Number(btn.parentNode.parentNode.parentNode.id.split('-')[1]);
+    const id = Number(btn.id.split('-')[1]);
     const {
       title,
       image,
