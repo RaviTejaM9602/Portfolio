@@ -22,7 +22,7 @@
 <body>
   <!--Header Section -->
 
-  <header>    
+  <header class="main_menu">    
     <a href="/">My Logo</a>
     <nav class="top">        
           <i class="fas fa-bars"></i>
@@ -32,7 +32,24 @@
         <li>Contact</li>
       </ul>
     </nav>    
-  </header>  
+  </header> 
+
+  <div id="myNav_mobile" class="overlay-bg">
+
+    <!-- Button to close the overlay navigation -->
+    <a class="closebtn">
+      <img src="./images/mobile_menu/Icon.png" alt="Close_icon">
+    </a>
+  
+    <!-- Overlay content -->
+    <ul class="overlay-content">
+      <li class="overlay-mobile"><a href="#home">Portfolio</a></li>
+      <li class="overlay-mobile"><a href="#about">About</a></li>
+      <li class="overlay-mobile"><a href="#contact">Contact</a></li>
+    </ul>
+  
+  </div>
+  
     
      <!--Main Section -->
   <main class="head-section"> 
@@ -62,7 +79,7 @@
   
       <!--Work Section -1  -->
    
-  <section class="work-section">
+  <section class="work-section"  id="home">
         <div class="work-container">
             <div class="img img-1">
               <img src="./images/Desktop/Grid-1/Snapshoot_Portfolio_1.svg" alt="first-work">
@@ -200,7 +217,7 @@
  
    <!--About Section-->
 
-  <section class="about-section about-desk">
+  <section id="about" class="about-section about-desk">
     <div class="about-desk_1">
       <div class="about-container">
         <div>
@@ -256,7 +273,7 @@
    </section>
 
   
-  <footer class="contact-desk">
+  <footer id="contact" class="contact-desk">
       <div class="contact-section">
          <div class="contact-container">
             <h2>Contact me</h2>
@@ -277,6 +294,6 @@
       </div>  
   </footer>
 
- 
+  <script src="./mobile.js"></script>
 </body>
 </html>
