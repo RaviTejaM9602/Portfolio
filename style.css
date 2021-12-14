@@ -680,3 +680,83 @@ button:active {
     right: 35px;
   }
 }
+
+.work-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 80%;
+  background: #c1c7d0d7;
+  z-index: 10;
+}
+
+.modal {
+  width: 90%;
+  max-height: 90%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.modal-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.close-button {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.close-button:hover {
+  color: #6070ff;
+}
+
+.modal-subtitle {
+  display: flex;
+}
+
+.modal-subtitle ul li {
+  margin: 20px;
+}
+
+.modal > img {
+  width: 100%;
+}
+
+.modal-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  width: 100%;
+}
+
+.modal-langauges {
+  display: flex;
+  align-items: center;
+}
+
+.modal .modal-langauges ul li {
+  color: #6070ff;
+  padding: 4px 12px;
+  margin-right: 8px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  font-size: 12px;
+}

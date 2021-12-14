@@ -101,3 +101,44 @@ for (let i=0; i < projects.length; i++){
 </div>
 </div>`
 }
+
+const modal = document.querySelector('.work-modal');
+const close = document.querySelector('.close-button');
+const titleElm = document.querySelector('.modal-title h3');
+const subTitle = document.querySelector('.modal .modal-subtitle');
+const img = document.querySelector('.modal img');
+const paragraph = document.querySelector('.modal-content p');
+const languages = document.querySelector('.modal-content .modal-langauges');
+const githubLink = document.querySelector('.modal-content .github-link');
+const sourceLink = document.querySelector('.modal-content .source-link');
+
+document.querySelectorAll('.work-card button').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const id = Number(btn.parentNode.parentNode.parentNode.id.split('-')[1]);
+    const {
+      title,
+      image,
+      imageAlt,
+      details,
+      description,
+      langs,
+      gitLink,
+      srcLink,
+    } = projects.find((p) => p.id === id);
+
+    titleElm.innerText = title;
+    subTitle.innerHTML = details.map((d) => `<li>${d}</li>`).join('');
+    img.setAttribute('src', image);
+    img.setAttribute('alt', imageAlt);
+    paragraph.innerText = description;
+    languages.innerHTML = langs.map((l) => `<li>${l}</li>`).join('');
+    githubLink.setAttribute('href', gitLink);
+    sourceLink.setAttribute('href', srcLink);
+
+    modal.style.display = 'flex';
+  });
+});
+
+close.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
