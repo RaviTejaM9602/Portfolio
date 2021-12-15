@@ -76,7 +76,6 @@ const projects = [
   },
 ];
 
-
 for (let i=0; i < projects.length; i++){
   document.querySelector('#home').innerHTML += 
   `<div class="work-container" id="project-${projects[i].id}">
@@ -120,7 +119,8 @@ const githubLink = document.querySelector('.modal .modal-btns .github-link');
 const sourceLink = document.querySelector('.modal .modal-btns .source-link');
 
 document.querySelectorAll('.content button').forEach((btn) => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', () => { 
+    document.body.className = 'scroll-hide';   
     const id = Number(btn.parentNode.parentNode.parentNode.id.split('-')[1]);
     const {
       title,

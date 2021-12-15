@@ -738,6 +738,10 @@ button:active {
   display: flex;
 }
 
+.scroll-hide {
+  overflow-y: hidden;
+}
+
 .modal .modal-subTitle li img {
   color: #6b778c;
   height: 10px;
