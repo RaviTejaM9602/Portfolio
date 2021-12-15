@@ -757,6 +757,7 @@ button:active {
   border-radius: 8px;
   margin-top: 25px;
   padding: 12px;
+  justify-content: center;
 }
 
 .modal-btns .btn-icon {
@@ -799,5 +800,5 @@ button:active {
   display: flex;
   padding-top: 20px;
   border-top: 1px solid #ebecf0;
-  gap: 20px;
+  gap: 10px;
 }
