@@ -119,7 +119,40 @@ const languages = document.querySelector('.modal-content .modal-langauges');
 const githubLink = document.querySelector('.modal .modal-btns .github-link');
 const sourceLink = document.querySelector('.modal .modal-btns .source-link');
 
-
+document.querySelectorAll('.content button').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const id = Number(btn.parentNode.parentNode.parentNode.id.split('-')[1]);
+    const {
+      title,
+      image,
+      imageAlt,
+      detailsHead,
+      details,
+      bigDescription,
+      langs,
+      gitLink,
+      srcLink,
+    } = projects.find((p) => p.id === id);
+    titleElm.innerText = title;
+    subTitle.innerHTML = details.map(skill=> {
+      return `<li>
+      <img src="./images/Counter1.png" alt="Counter">
+    </li>
+    <li class="sub-lang">${skill}</li>`
+    }).join('') ;
+    img.setAttribute('src', image);
+    img.setAttribute('alt', imageAlt);
+    canopy.innerText = detailsHead;
+    paragraph.innerText = bigDescription;
+    languages.innerHTML = langs.map((l) => `<li>${l}</li>`).join('');
+    githubLink.setAttribute('href', gitLink);
+    sourceLink.setAttribute('href', srcLink);
+    modal.style.display = 'flex';
+  });
+});
+close.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
 
 
 
