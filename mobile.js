@@ -16,7 +16,7 @@ function closeMobileMenu() {
 closebtn.addEventListener('click', closeMobileMenu);
 overlayContent.addEventListener('click', closeMobileMenu);
 
-//work section window 
+// work section window
 const projects = [
   {
     id: 1,
@@ -84,18 +84,14 @@ for (let i = 0; i < projects.length; i += 1) {
       <h2>${projects[i].title}</h2>
     <div class="canopy">
         <h4>${projects[i].detailsHead}</h4>
-          <ul>${projects[i].details.map(skill => { return `<li>
-              <img src="./images/Counter1.png" alt="Counter">
-            </li>
-            <li class="sub-lang">${skill}</li>`
-            }).join('')}
+          <ul>${projects[i].details.map(skill => 
+            { return `<li> <img src="./images/Counter1.png" alt="Counter"> </li>  <li class="sub-lang">${skill}</li>`}).join('')}
           </ul>
     </div>
     <p class="img-description">${projects[i].description}
     </p>
     <ul class="lang">
-    ${projects[i].langs.map(lang => { return `<li class="prog-lang">${lang}</li>`
-    }).join('')}    
+    ${projects[i].langs.map(lang => { return `<li class="prog-lang">${lang}</li>`}).join('')}    
     </ul>
     <button>See Project</button>
     </div>          
@@ -130,11 +126,11 @@ document.querySelectorAll('.content button').forEach((btn) => {
       srcLink,
     } = projects.find((p) => p.id === id);
     titleElm.innerText = title;
-    subTitle.innerHTML = details.map(skill => { 
+    subTitle.innerHTML = details.map(skill => {
       return `<li>
       <img src="./images/Counter1.png" alt="Counter">
     </li>
-    <li class="sub-lang">${skill}</li>`}).join('');
+    <li class="sub-lang">${skill}</li>` }).join('');
     img.setAttribute('src', image);
     img.setAttribute('alt', imageAlt);
     canopy.innerText = detailsHead;
