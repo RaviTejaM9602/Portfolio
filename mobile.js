@@ -16,8 +16,7 @@ function closeMobileMenu() {
 closebtn.addEventListener('click', closeMobileMenu);
 overlayContent.addEventListener('click', closeMobileMenu);
 
-//work section window
-
+//work section window 
 const projects = [
   {
     id: 1,
@@ -102,7 +101,7 @@ for (let i = 0; i < projects.length; i += 1) {
     </div>          
 </div>
 </div>`
-}
+};
 
 const modal = document.querySelector('.work-modal');
 const close = document.querySelector('.close-button');
@@ -116,8 +115,8 @@ const githubLink = document.querySelector('.modal .modal-btns .github-link');
 const sourceLink = document.querySelector('.modal .modal-btns .source-link');
 
 document.querySelectorAll('.content button').forEach((btn) => {
-  btn.addEventListener('click', () => { 
-    document.body.className = 'scroll-hide';   
+  btn.addEventListener('click', () => {
+    document.body.className = 'scroll-hide';
     const id = Number(btn.parentNode.parentNode.parentNode.id.split('-')[1]);
     const {
       title,
@@ -131,11 +130,11 @@ document.querySelectorAll('.content button').forEach((btn) => {
       srcLink,
     } = projects.find((p) => p.id === id);
     titleElm.innerText = title;
-    subTitle.innerHTML = details.map(skill => { return `<li>
+    subTitle.innerHTML = details.map(skill => { 
+      return `<li>
       <img src="./images/Counter1.png" alt="Counter">
     </li>
-    <li class="sub-lang">${skill}</li>`
-    }).join('') ;
+    <li class="sub-lang">${skill}</li>`}).join('');
     img.setAttribute('src', image);
     img.setAttribute('alt', imageAlt);
     canopy.innerText = detailsHead;
