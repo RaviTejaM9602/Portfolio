@@ -17,6 +17,7 @@ closebtn.addEventListener('click', closeMobileMenu);
 overlayContent.addEventListener('click', closeMobileMenu);
 
 //work section window
+
 const projects = [
   {
     id: 1,
@@ -76,18 +77,15 @@ const projects = [
   },
 ];
 
-for (let i=0; i < projects.length; i++){
-  document.querySelector('#home').innerHTML += 
-  `<div class="work-container" id="project-${projects[i].id}">
+for (let i = 0; i < projects.length; i += 1) {
+  document.querySelector('#home').innerHTML += `<div class="work-container" id="project-${projects[i].id}">
   <div class="img img-1">
     <img src="${projects[i].image}" alt="${projects[i].imageAlt}">
     <div class="content">
       <h2>${projects[i].title}</h2>
     <div class="canopy">
         <h4>${projects[i].detailsHead}</h4>
-          <ul>
-            ${projects[i].details.map(skill=> {
-              return `<li>
+          <ul>${projects[i].details.map(skill => { return `<li>
               <img src="./images/Counter1.png" alt="Counter">
             </li>
             <li class="sub-lang">${skill}</li>`
@@ -97,8 +95,7 @@ for (let i=0; i < projects.length; i++){
     <p class="img-description">${projects[i].description}
     </p>
     <ul class="lang">
-    ${projects[i].langs.map(lang=> {
-      return `<li class="prog-lang">${lang}</li>`
+    ${projects[i].langs.map(lang => { return `<li class="prog-lang">${lang}</li>`
     }).join('')}    
     </ul>
     <button>See Project</button>
@@ -134,8 +131,7 @@ document.querySelectorAll('.content button').forEach((btn) => {
       srcLink,
     } = projects.find((p) => p.id === id);
     titleElm.innerText = title;
-    subTitle.innerHTML = details.map(skill=> {
-      return `<li>
+    subTitle.innerHTML = details.map(skill => { return `<li>
       <img src="./images/Counter1.png" alt="Counter">
     </li>
     <li class="sub-lang">${skill}</li>`
@@ -154,7 +150,3 @@ close.addEventListener('click', () => {
   document.body.className = 'scroll-show';
   modal.style.display = 'none';
 });
-
-
-
-
