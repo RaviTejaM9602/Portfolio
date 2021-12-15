@@ -84,17 +84,18 @@ for (let i = 0; i < projects.length; i += 1) {
       <h2>${projects[i].title}</h2>
     <div class="canopy">
         <h4>${projects[i].detailsHead}</h4>
-          <ul>${projects[i].details.map(skill => { return `<li> <img src="./images/Counter1.png" alt="Counter"> </li>  <li class="sub-lang">${skill}</li>`}).join('')}
+          <ul>${projects[i].details.map( (skill) => { return `<li> <img src="./images/Counter1.png" alt="Counter"> </li>  <li class="sub-lang">${skill}</li>`}).join('') };
           </ul>
     </div>
     <p class="img-description">${projects[i].description} </p>
     <ul class="lang">
-    ${projects[i].langs.map(lang => { return `<li class="prog-lang">${lang}</li>` }).join('')}    
+    ${projects[i].langs.map((lang) => { return `<li class="prog-lang">${lang}</li>` }).join('') };   
     </ul>
     <button>See Project</button>
     </div>          
 </div>
-</div>`}
+</div>`;
+};
 
 const modal = document.querySelector('.work-modal');
 const close = document.querySelector('.close-button');
@@ -120,9 +121,10 @@ document.querySelectorAll('.content button').forEach((btn) => {
       bigDescription,
       langs,
       gitLink,
-      srcLink,} = projects.find((p) => p.id === id);
+      srcLink,
+      } = projects.find((p) => p.id === id);
        titleElm.innerText = title;
-    subTitle.innerHTML = details.map(skill => { return `<li> <img src="./images/Counter1.png" alt="Counter"> </li> <li class="sub-lang">${skill}</li>` }).join('');
+    subTitle.innerHTML = details.map((skill) => { return `<li> <img src="./images/Counter1.png" alt="Counter"> </li> <li class="sub-lang">${skill}</li>` }).join('');
     img.setAttribute('src', image);
     img.setAttribute('alt', imageAlt);
     canopy.innerText = detailsHead;
