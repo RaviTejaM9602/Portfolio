@@ -107,7 +107,7 @@ const modalhtml = `
             <h4 id="sub-canopy">Canopy</h4>
               <ul>
                 <li>
-                  <img src="./images/Counter1.png" alt="Counter">
+                <img src="./images/Counter1.png" alt="Counter">
                 </li>
                 <li class="sub-lang">Back End Dev</li>
                 <li>
