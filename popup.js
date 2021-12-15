@@ -29,6 +29,7 @@ const projects = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     bigDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releated to project 1",
     langs: ['html', 'css', 'javaScript'],
+    technologiesPopup: ['html', 'css', 'javaScript'],
     gitLink: '#',
     srcLink: '#',
   },
@@ -43,6 +44,7 @@ const projects = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     bigDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releated to project 2",
     langs: ['html', 'css', 'javaScript'],
+    technologiesPopup: ['html', 'css', 'javaScript'],
     gitLink: '#',
     srcLink: '#',
   },
@@ -57,6 +59,7 @@ const projects = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     bigDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releated to project 3",
     langs: ['html', 'css', 'javaScript'],
+    technologiesPopup: ['html', 'css', 'javaScript'],
     gitLink: '#',
     srcLink: '#',
   },
@@ -71,6 +74,7 @@ const projects = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     bigDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releated to project 4",
     langs: ['html', 'css', 'javaScript'],
+    technologiesPopup: ['html', 'css', 'javaScript'],
     gitLink: '#',
     srcLink: '#',
   },
@@ -97,100 +101,62 @@ for (let i = 0; i < projects.length; i += 1) {
 </div>`;
 }
 
-const modalhtml = ` 
-<div class="modal" id="modal">
-           <div class="modal-header">
-              <h3 class="modal-title">title</h3>
-              <button class="close-button">&times;</button>
-           </div>
-          <div class="canopy modal-subTitle">
-            <h4 id="sub-canopy">Canopy</h4>
-              <ul>
-                <li>
-                  <img src="./images/Counter1.png" alt="Counter">
-                </li>
-                <li class="sub-lang">Back End Dev</li>
-                <li>
-                  <img src="./images/Counter1.png" alt="Counter">
-                </li> 
-                <li class="sub-lang">2015</li>
-              </ul>
-        </div>
-        <img src="./images/Desktop/Grid-1/Snapshoot_Portfolio_1.svg" alt="First-Project">
-        <div class="modal-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, 
-                   nemo! Autem ad doloremque esse ut, rerum voluptatem exercitationem aut dolore magnam 
-                   porro repellendus, beatae consequuntur magni, 
-                  delectus eum inventore provident!</p>       
-        <div>
-          <ul class="modal-langauges">
-            <li>html</li>
-            <li>css</li>
-            <li>javaScript</li>
-          </ul>
-     <div class="modal-btns">
-       <a class="github-link" href="#">
-         See Live <img
-         class="btn-icon"
-         src="./images/Pop-up/git.png"
-         alt="github icon"
-       /></a>
-       <a class="source-link" href="#">
-         See Source <img
-         class="btn-icon"
-         src="./images/Pop-up/Icon.png"
-         alt="github icon"
-       /></a>      
-   </div>
- </div>
-</div>
-</div>`;
+// function displayProjectDescriptionPopup(value) {
+//   const techData = langs(true, projects[value].technologiesPopup);
+//   const projectPopup = document.querySelector('#projectPopup');
+//   const popupContentBuilder = `<div class="modal" id="modal">
+//                                    <div class="modal-header">
+//                                        <div class="modal-title">                                           
+//                                                <h3>${projects[value].title}</h3>
+//                                                <span class="close-popup">&times;</span>
+//                                            </div>
+//                                            <div class="canopy">
+//                                               <h4>${projects[i].detailsHead}</h4>
+//                                                <ul>${projects[i].details.map((skill) => `<li> <img src="./images/Counter1.png" alt="Counter"> </li>  <li class="sub-lang">${skill}</li>`).join('')};
+//                                              </ul>
+//                                            </div>
+//                                        </div>
+//                                    </div>
+//                                    <div class="popup-body">
+//                                        <div class="work-image">
+//                                            <img src="${projects[value].popupImageUrlMobile}" class="img-style" alt="${projects[value].name} project screenshot"/>
+//                                            <img src="${projects[value].popupImageUrlDesktop}" class="img-style-desktop-popup" alt="${projects[value].name} project screenshot"/>
+//                                        </div>
+//                                        <div class="description-container">
+//                                            <div class="works-description intro-message">
+//                                                <p>
+//                                                ${projects[value].bigDescription}
+//                                                </p>
+//                                            </div>
+//                                            <div class="project-tags">
+//                                                <div class="tags">
+//                                                    <ul>
+//                                                     ${techData[0]}
+//                                                    </ul>
+//                                                    <ul>
+//                                                     ${techData[1]}
+//                                                    </ul>
+//                                                </div>
+//                                                <div class="tags-buttons">
+//                                                    <a href="${projects[value].linkLive}" class="btn-see-project">See live <i class="fa fa-rss"></i></a>
+//                                                    <a href="${projects[value].linkSource}" class="btn-see-project">See source <i class="fa fa-github"></i></a>
+//                                                </div>
+//                                            </div>
+//                                        </div>
+//                                    </div>
+//                                </div>`;
+//   projectPopup.innerHTML = popupContentBuilder;
+//   projectPopup.style.display = 'block';
+//   const closePopup = document.querySelector('.close-popup');
+//   closePopup.addEventListener('click', () => {
+//     projectPopup.style.display = 'none';
+//   });
+// }
 
-const workModal = document.createElement('section');
-workModal.classList.add('work-modal');
-
-workModal.innerHTML = modalhtml;
-document.body.appendChild(workModal);
-
-const modal = document.querySelector('.work-modal');
-const close = document.querySelector('.close-button');
-const titleElm = document.querySelector('.modal-title');
-const canopy = document.querySelector('#sub-canopy');
-const subTitle = document.querySelector('.modal .modal-subTitle ul');
-const img = document.querySelector('.modal > img');
-const paragraph = document.querySelector('.modal-content p');
-const languages = document.querySelector('.modal-content .modal-langauges');
-const githubLink = document.querySelector('.modal .modal-btns .github-link');
-const sourceLink = document.querySelector('.modal .modal-btns .source-link');
-
-document.querySelectorAll('.content button').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    document.body.className = 'scroll-hide';
-    const id = Number(btn.parentNode.parentNode.parentNode.id.split('-')[1]);
-    const {
-      title,
-      image,
-      imageAlt,
-      detailsHead,
-      details,
-      bigDescription,
-      langs,
-      gitLink,
-      srcLink,
-    } = projects.find((p) => p.id === id);
-    titleElm.innerText = title;
-    subTitle.innerHTML = details.map((skill) => `<li> <img src="./images/Counter1.png" alt="Counter"> </li> <li class="sub-lang">${skill}</li>`).join('');
-    img.setAttribute('src', image);
-    img.setAttribute('alt', imageAlt);
-    canopy.innerText = detailsHead;
-    paragraph.innerText = bigDescription;
-    languages.innerHTML = langs.map((l) => `<li>${l}</li>`).join('');
-    githubLink.setAttribute('href', gitLink);
-    sourceLink.setAttribute('href', srcLink);
-    modal.style.display = 'flex';
-  });
-});
-close.addEventListener('click', () => {
-  document.body.className = 'scroll-show';
-  modal.style.display = 'none';
-});
+const seeProjectButtons = document.querySelectorAll('.content button');
+console.log('seeProjectButtons.value');
+// for (let c = 0; c < seeProjectButtons.length; c += 1) {
+//   seeProjectButtons[c].addEventListener('click', () => {
+//     displayProjectDescriptionPopup(seeProjectButtons[c].getAttribute('project-index'));
+//   });
+// }
