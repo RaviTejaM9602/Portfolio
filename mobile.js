@@ -151,6 +151,7 @@ document.querySelectorAll('.content button').forEach((btn) => {
   });
 });
 close.addEventListener('click', () => {
+  document.body.className = 'scroll-show';
   modal.style.display = 'none';
 });
 

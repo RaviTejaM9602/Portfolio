@@ -209,6 +209,7 @@ li img {
 
 .modal > img {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .canopy ul li {
@@ -736,10 +737,31 @@ button:active {
 
 .modal .modal-subTitle {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .scroll-hide {
   overflow-y: hidden;
+}
+
+.scroll-show {
+  overflow-y: scroll;
+}
+
+.modal-btns .source-link,
+.modal-btns .github-link {
+  text-decoration: none;
+  border: 1px solid #6070ff;
+  color: #6070ff;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 25px;
+  padding: 12px;
+}
+
+.modal-btns .btn-icon {
+  margin-left: 14px;
+  width: 20px;
 }
 
 .modal .modal-subTitle li img {
@@ -753,7 +775,7 @@ button:active {
 .modal-content {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0;
+  gap: 8px;
   width: 100%;
 }
 
@@ -767,6 +789,7 @@ button:active {
   color: #6070ff;
   padding: 4px 12px;
   margin-right: 8px;
+  margin-bottom: 20px;
   background-color: #ebebff;
   border-radius: 8px;
   font-size: 12px;
