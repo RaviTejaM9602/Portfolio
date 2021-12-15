@@ -15,6 +15,7 @@ function closeMobileMenu() {
 
 closebtn.addEventListener('click', closeMobileMenu);
 overlayContent.addEventListener('click', closeMobileMenu);
+
 //work section window
 const projects = [
   {
@@ -26,6 +27,7 @@ const projects = [
     details: ['Back End Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    bigDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releated to project 1",
     langs: ['html', 'css', 'javaScript'],
     gitLink: '#',
     srcLink: '#',
@@ -39,6 +41,7 @@ const projects = [
     details: ['Back End Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    bigDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releated to project 2",
     langs: ['html', 'css', 'javaScript'],
     gitLink: '#',
     srcLink: '#',
@@ -52,6 +55,7 @@ const projects = [
     details: ['Back End Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    bigDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releated to project 3",
     langs: ['html', 'css', 'javaScript'],
     gitLink: '#',
     srcLink: '#',
@@ -65,6 +69,7 @@ const projects = [
     details: ['Back End Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    bigDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releated to project 4",
     langs: ['html', 'css', 'javaScript'],
     gitLink: '#',
     srcLink: '#',
@@ -73,7 +78,8 @@ const projects = [
 
 
 for (let i=0; i < projects.length; i++){
-  document.querySelector('#home').innerHTML += `<div class="work-container" id="project-${projects[i].id}">
+  document.querySelector('#home').innerHTML += 
+  `<div class="work-container" id="project-${projects[i].id}">
   <div class="img img-1">
     <img src="${projects[i].image}" alt="${projects[i].imageAlt}">
     <div class="content">
@@ -96,7 +102,7 @@ for (let i=0; i < projects.length; i++){
       return `<li class="prog-lang">${lang}</li>`
     }).join('')}    
     </ul>
-    <button id="peoject-${projects[i].id}">See Project</button>
+    <button>See Project</button>
     </div>          
 </div>
 </div>`
@@ -104,41 +110,17 @@ for (let i=0; i < projects.length; i++){
 
 const modal = document.querySelector('.work-modal');
 const close = document.querySelector('.close-button');
-const titleElm = document.querySelector('.modal-title h3');
-const subTitle = document.querySelector('.modal .modal-subtitle');
-const img = document.querySelector('.modal img');
+const titleElm = document.querySelector('.modal-title');
+const canopy = document.querySelector('#sub-canopy');
+const subTitle = document.querySelector('.modal .modal-subTitle ul');
+const img = document.querySelector('.modal > img');
 const paragraph = document.querySelector('.modal-content p');
 const languages = document.querySelector('.modal-content .modal-langauges');
-const githubLink = document.querySelector('.modal-content .github-link');
-const sourceLink = document.querySelector('.modal-content .source-link');
+const githubLink = document.querySelector('.modal .modal-btns .github-link');
+const sourceLink = document.querySelector('.modal .modal-btns .source-link');
 
-document.querySelectorAll('.work-container button').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const id = Number(btn.id.split('-')[1]);
-    const {
-      title,
-      image,
-      imageAlt,
-      details,
-      description,
-      langs,
-      gitLink,
-      srcLink,
-    } = projects.find((p) => p.id === id);
 
-    titleElm.innerText = title;
-    subTitle.innerHTML = details.map((d) => `<li>${d}</li>`).join('');
-    img.setAttribute('src', image);
-    img.setAttribute('alt', imageAlt);
-    paragraph.innerText = description;
-    languages.innerHTML = langs.map((l) => `<li>${l}</li>`).join('');
-    githubLink.setAttribute('href', gitLink);
-    sourceLink.setAttribute('href', srcLink);
 
-    modal.style.display = 'flex';
-  });
-});
 
-close.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
+
+

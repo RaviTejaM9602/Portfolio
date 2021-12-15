@@ -207,6 +207,10 @@ li img {
   align-items: center;
 }
 
+.modal > img {
+  width: 100%;
+}
+
 .canopy ul li {
   display: flex;
   align-items: center;
@@ -683,13 +687,15 @@ button:active {
 
 .work-modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 500px;
-  max-width: 80%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
   background: #c1c7d0d7;
-  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
 }
 
 .modal {
@@ -700,6 +706,7 @@ button:active {
   padding: 16px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   overflow: auto;
 }
 
