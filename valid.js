@@ -1,8 +1,6 @@
 const form = document.querySelector('.input-section');
 const emailMsg = document.querySelector('.email-error');
-//Testing Email Function & Validating Email 
-
-
+//Testing Email Function & Validating Email
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const emailValue = form.querySelector('#email').value.trim();
