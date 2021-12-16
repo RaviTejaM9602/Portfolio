@@ -386,6 +386,7 @@ li img {
 
 .input-section textarea {
   margin-bottom: 4px;
+  margin-top: 18px;
   width: 100%;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -415,6 +416,14 @@ textarea::placeholder {
   margin-top: 12px;
   color: #396df2;
   border: 1px solid  #396df2;
+}
+
+.email-error {
+  color: rgb(184, 50, 50);
+  width: fit-content;
+  margin-top: -18px;
+  text-align: left;
+  align-self: flex-start;
 }
 
 button:hover {
