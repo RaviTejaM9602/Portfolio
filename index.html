@@ -156,15 +156,18 @@
          </div>
          
        <form action="https://formspree.io/f/xnqwaogj"
-        method="POST"  class="input-section" >
-          <input type="text" placeholder="your name" maxlength="30" required>
-          <input type="email" placeholder="Enter your email" required>
-          <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
+        method="POST" class="input-section">          
+            <input type="text" name="username" id="username" autocomplete="off" placeholder="your name" maxlength="30" required>
+            <input type="text" name="email" id="email" autocomplete="off" placeholder="Enter your email" required>
+            <small class="email-error"></small>
+            <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
           <button class="btn" type="submit">Get It Touch</button>
         </form>      
       </div>  
   </footer>
+          
 
   <script src="./mobile.js"></script>
+  <script src="./valid.js"></script>
 </body>
 </html>
