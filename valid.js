@@ -1,7 +1,7 @@
 const form = document.querySelector('.input-section');
 const emailMsg = document.querySelector('.email-error');
 
-//Testing Email Function & Validating Email 
+// Testing Email Functionality and Validating Email
 function testEmail(email) {
   const emailPattern = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
   return emailPattern.test(email);
