@@ -18,3 +18,10 @@ for (let j = 0; j < formInputs.length; j += 1) {
   });
 }
 
+const formData = JSON.parse(localStorage.getItem('contactFormData'));
+if (formData !== null) {
+  userName.value = formData.name;
+  userEmail.value = formData.email;
+  userMessage.value = formData.message;
+}
+
