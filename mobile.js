@@ -15,3 +15,4 @@ function closeMobileMenu() {
 
 closebtn.addEventListener('click', closeMobileMenu);
 overlayContent.addEventListener('click', closeMobileMenu);
+overlayContent.addEventListener('click', closeMobileMenu);
