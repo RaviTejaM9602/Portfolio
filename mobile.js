@@ -17,7 +17,7 @@ function closeMobileMenu() {
 closebtn.addEventListener('click', closeMobileMenu);
 overlayContent.addEventListener('click', closeMobileMenu);
 
- // work section window
+// work section window
 const projects = [
   {
     id: 1,
