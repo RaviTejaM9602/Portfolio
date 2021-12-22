@@ -80,4 +80,22 @@ const projects = [
 
 
 for (let i = 0; i < projects.length; i += 1) {
+  document.querySelector('#home').innerHTML += `<div class="work-container" id="project-${projects[i].id}">
+  <div class="img img-1">
+    <img src="${projects[i].image}" alt="${projects[i].imageAlt}">
+    <div class="content">
+      <h2>${projects[i].title}</h2>
+    <div class="canopy">
+        <h4>${projects[i].detailsHead}</h4>
+          <ul>${projects[i].details.map((skill) => `<li> <img src="./images/Counter1.png" alt="Counter"> </li>  <li class="sub-lang">${skill}</li>`).join('')};
+          </ul>
+    </div>
+    <p class="img-description">${projects[i].description} </p>
+    <ul class="lang">                 
+    ${projects[i].langs.map((lang) => `<li class="prog-lang">${lang}</li>`).join('')};   
+    </ul>
+    <button>See Project</button>
+    </div>          
+</div>
+</div>`;
 }
