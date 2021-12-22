@@ -98,4 +98,70 @@ for (let i = 0; i < projects.length; i += 1) {
 </div>`;
 }
 
+document.querySelectorAll('.content button').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    document.body.classList.add('scroll-hide');
+    const id = Number(btn.parentNode.parentNode.parentNode.id.split('-')[1]);
+    const {
+      title,
+      image,
+      imageAlt,
+      detailsHead,
+      details,
+      bigDescription,
+      langs,
+      gitLink,
+      srcLink,
+    } = projects.find((p) => p.id === id);
+
+    document.body += ` 
+    <div class="modal" id="modal">
+               <div class="modal-header">
+                  <h3 class="modal-title">${title}</h3>
+                  <button class="close-button">&times;</button>
+               </div>
+              <div class="canopy modal-subTitle">
+                <h4 id="sub-canopy">${detailsHead}</h4>
+                  <ul>
+                    ${details
+                      .map(
+                        (skill) =>
+                          `<li> <img src="./images/Counter1.png" alt="Counter"> </li>  <li class="sub-lang">${skill}</li>`
+                      )
+                      .join('')}
+                  </ul>
+            </div>
+            <img src="${image}" alt="${imageAlt}">
+            <div class="modal-content">
+                    <p>${bigDescription}</p>       
+            <div>
+              <ul class="modal-langauges">
+              ${langs
+                .map((lang) => `<li class="prog-lang">${lang}</li>`)
+                .join('')}
+              </ul>
+         <div class="modal-btns">
+           <a class="github-link" href="${gitLink}">
+             See Live <img
+             class="btn-icon"
+             src="./images/Pop-up/git.png"
+             alt="github icon"
+           /></a>
+           <a class="source-link" href="${srcLink}">
+             See Source <img
+             class="btn-icon"
+             src="./images/Pop-up/Icon.png"
+             alt="github icon"
+           /></a>      
+       </div>
+     </div>
+    </div>
+    </div>`;
+
+    document.querySelector('.close-button').addEventListener('click', () => {
+      document.getElementById('modal').remove();
+      document.body.classList.remove('scroll-hide');
+    });
+  });
+});
 
