@@ -85,7 +85,8 @@ for (let i = 0; i < projects.length; i += 1) {
       <h2>${projects[i].title}</h2>
     <div class="canopy">
         <h4>${projects[i].detailsHead}</h4>
-          <ul>${projects[i].details.map((skill) => `<li> <img src="./images/Counter1.png" alt="Counter"> </li>  <li class="sub-lang">${skill}</li>`).join('')};
+          <ul>${projects[i].details.map((skill) => `<li> <img src="./images/Counter1.png" alt="Counter"> </li> 
+           <li class="sub-lang">${skill}</li>`).join('')};
           </ul>
     </div>
     <p class="img-description">${projects[i].description} </p>
@@ -98,9 +99,75 @@ for (let i = 0; i < projects.length; i += 1) {
 </div>`;
 }
 
+const modalhtml = ` 
+<div class="modal" id="modal">
+           <div class="modal-header">
+              <h3 class="modal-title">title</h3>
+              <button class="close-button">&times;</button>
+           </div>
+          <div class="canopy modal-subTitle">
+            <h4 id="sub-canopy">Canopy</h4>
+              <ul>
+                <li>
+                <img src="./images/Counter1.png" alt="Counter">
+                </li>
+                <li class="sub-lang">Back End Dev</li>
+                <li>
+                  <img src="./images/Counter1.png" alt="Counter">
+                </li> 
+                <li class="sub-lang">2015</li>
+              </ul>
+        </div>
+        <img src="./images/Desktop/Grid-1/Snapshoot_Portfolio_1.svg" alt="First-Project">
+        <div class="modal-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, 
+                   nemo! Autem ad doloremque esse ut, rerum voluptatem exercitationem aut dolore magnam 
+                   porro repellendus, beatae consequuntur magni, 
+                  delectus eum inventore provident!</p>       
+        <div>
+          <ul class="modal-langauges">
+            <li>html</li>
+            <li>css</li>
+            <li>javaScript</li>
+          </ul>
+     <div class="modal-btns">
+       <a class="github-link" href="#">
+         See Live <img
+         class="btn-icon"
+         src="./images/Pop-up/git.png"
+         alt="github icon"
+       /></a>
+       <a class="source-link" href="#">
+         See Source <img
+         class="btn-icon"
+         src="./images/Pop-up/Icon.png"
+         alt="github icon"
+       /></a>      
+   </div>
+ </div>
+</div>
+</div>`;
+
+const workModal = document.createElement('section');
+workModal.classList.add('work-modal');
+
+workModal.innerHTML = modalhtml;
+document.body.appendChild(workModal);
+
+const modal = document.querySelector('.work-modal');
+const close = document.querySelector('.close-button');
+const titleElm = document.querySelector('.modal-title');
+const canopy = document.querySelector('#sub-canopy');
+const subTitle = document.querySelector('.modal .modal-subTitle ul');
+const img = document.querySelector('.modal > img');
+const paragraph = document.querySelector('.modal-content p');
+const languages = document.querySelector('.modal-content .modal-langauges');
+const githubLink = document.querySelector('.modal .modal-btns .github-link');
+const sourceLink = document.querySelector('.modal .modal-btns .source-link');
+
 document.querySelectorAll('.content button').forEach((btn) => {
   btn.addEventListener('click', () => {
-    document.body.classList.add('scroll-hide');
+    document.body.className = 'scroll-hide';
     const id = Number(btn.parentNode.parentNode.parentNode.id.split('-')[1]);
     const {
       title,
@@ -113,55 +180,19 @@ document.querySelectorAll('.content button').forEach((btn) => {
       gitLink,
       srcLink,
     } = projects.find((p) => p.id === id);
-
-    document.body += ` 
-    <div class="modal" id="modal">
-               <div class="modal-header">
-                  <h3 class="modal-title">${title}</h3>
-                  <button class="close-button">&times;</button>
-               </div>
-              <div class="canopy modal-subTitle">
-                <h4 id="sub-canopy">${detailsHead}</h4>
-                  <ul>
-                    ${details
-                      .map(
-                        (skill) =>
-                          `<li> <img src="./images/Counter1.png" alt="Counter"> </li>  <li class="sub-lang">${skill}</li>`
-                      )
-                      .join('')}
-                  </ul>
-            </div>
-            <img src="${image}" alt="${imageAlt}">
-            <div class="modal-content">
-                    <p>${bigDescription}</p>       
-            <div>
-              <ul class="modal-langauges">
-              ${langs
-                .map((lang) => `<li class="prog-lang">${lang}</li>`)
-                .join('')}
-              </ul>
-         <div class="modal-btns">
-           <a class="github-link" href="${gitLink}">
-             See Live <img
-             class="btn-icon"
-             src="./images/Pop-up/git.png"
-             alt="github icon"
-           /></a>
-           <a class="source-link" href="${srcLink}">
-             See Source <img
-             class="btn-icon"
-             src="./images/Pop-up/Icon.png"
-             alt="github icon"
-           /></a>      
-       </div>
-     </div>
-    </div>
-    </div>`;
-
-    document.querySelector('.close-button').addEventListener('click', () => {
-      document.getElementById('modal').remove();
-      document.body.classList.remove('scroll-hide');
-    });
+    titleElm.innerText = title;
+    subTitle.innerHTML = details.map((skill) => `<li> <img src="./images/Counter1.png" alt="Counter"> </li> <li class="sub-lang">${skill}</li>`).join('');
+    img.setAttribute('src', image);
+    img.setAttribute('alt', imageAlt);
+    canopy.innerText = detailsHead;
+    paragraph.innerText = bigDescription;
+    languages.innerHTML = langs.map((l) => `<li>${l}</li>`).join('');
+    githubLink.setAttribute('href', gitLink);
+    sourceLink.setAttribute('href', srcLink);
+    modal.style.display = 'flex';
   });
 });
-
+close.addEventListener('click', () => {
+  document.body.className = 'scroll-show';
+  modal.style.display = 'none';
+});
