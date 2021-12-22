@@ -18,7 +18,7 @@ closebtn.addEventListener('click', closeMobileMenu);
 overlayContent.addEventListener('click', closeMobileMenu);
 overlayContent.addEventListener('click', closeMobileMenu);
 
-// work section window
+ // work section window
 const projects = [
   {
     id: 1,
@@ -77,7 +77,6 @@ const projects = [
     srcLink: '#',
   },
 ];
-
 
 for (let i = 0; i < projects.length; i += 1) {
   document.querySelector('#home').innerHTML += `<div class="work-container" id="project-${projects[i].id}">
