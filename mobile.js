@@ -97,3 +97,5 @@ for (let i = 0; i < projects.length; i += 1) {
 </div>
 </div>`;
 }
+
+
