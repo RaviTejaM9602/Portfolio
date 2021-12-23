@@ -1,3 +1,4 @@
+// Overlay menu for Hamburger
 const openNav = document.querySelector('.top');
 const closebtn = document.querySelector('.closebtn');
 const myNavMenu = document.getElementById('myNav_mobile');
@@ -84,7 +85,8 @@ for (let i = 0; i < projects.length; i += 1) {
       <h2>${projects[i].title}</h2>
     <div class="canopy">
         <h4>${projects[i].detailsHead}</h4>
-          <ul>${projects[i].details.map((skill) => `<li> <img src="./images/Counter1.png" alt="Counter"> </li>  <li class="sub-lang">${skill}</li>`).join('')};
+          <ul>${projects[i].details.map((skill) => `<li> <img src="./images/Counter1.png" alt="Counter"> </li> 
+           <li class="sub-lang">${skill}</li>`).join('')};
           </ul>
     </div>
     <p class="img-description">${projects[i].description} </p>
@@ -193,4 +195,30 @@ document.querySelectorAll('.content button').forEach((btn) => {
 close.addEventListener('click', () => {
   document.body.className = 'scroll-show';
   modal.style.display = 'none';
+});
+
+const form = document.querySelector('.input-section');
+const emailMsg = document.querySelector('.email-error');
+
+// Testing Email Functionality and Validating Email
+function testEmail(email) {
+  const emailPattern = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+  return emailPattern.test(email);
+}
+function validEmail(emailValue) {
+  if (testEmail(emailValue) === true) {
+    form.submit();
+  } else {
+    emailMsg.innerHTML = 'Please Enter the E-mail Pattern in Lower Case';
+  }
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailValue = form.querySelector('#email').value.trim();
+  if (emailValue === '') {
+    emailMsg.innerHTML = 'Email field is required!';
+  } else {
+    validEmail(emailValue);
+  }
 });
