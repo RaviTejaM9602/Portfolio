@@ -24,4 +24,3 @@ if (formData !== null) {
   userEmail.value = formData.email;
   userMessage.value = formData.message;
 }
-
