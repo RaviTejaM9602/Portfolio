@@ -12,11 +12,14 @@ Additional description about the project and its features.
 ## Built With
 
 HTML and CSS
-Using Grid and Flexbox , forms etc 
+Using Grid and Flexbox , forms etc
+Javascript : Arrays and Objects
+Local Storage
+Form Validation etc
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://ravitejam9602.github.io/Portfolio/)
 
 
 ## Getting Started
@@ -37,8 +40,8 @@ Linter Setup
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/RaviTejaM9602/Hello-Microverse)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- GitHub: [@githubhandle](https://github.com/RaviTejaM9602/Portfolio)
+- Twitter: [@twitterhandle](https://twitter.com/RaviTejaMekala1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ravi-teja-8499a31b9/)
 
 ## 🤝 Contributing
