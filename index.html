@@ -156,10 +156,11 @@
          </div>
          
        <form action="https://formspree.io/f/xnqwaogj"
-        method="POST" class="input-section">          
-            <input type="text" name="username" id="username" autocomplete="off" placeholder="your name" maxlength="30" required>
-            <input type="text" name="email" id="email" autocomplete="off" placeholder="Enter your email" required>
+        method="POST" class="input-section"> 
+            <small class="input-error"></small>         
+            <input type="text" name="username" id="username" autocomplete="off" placeholder="your name" maxlength="30">
             <small class="email-error"></small>
+            <input type="email" name="email" id="email" autocomplete="off" placeholder="Enter your email" required>
             <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
           <button class="btn" type="submit">Get It Touch</button>
         </form>      

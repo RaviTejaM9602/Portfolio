@@ -1,5 +1,7 @@
 const form = document.querySelector('.input-section');
+const NAME_REQUIRED = 'Please enter your name';
 const emailMsg = document.querySelector('.email-error');
+const inputMsg = document.querySelector('.input-error');
 
 // Testing Email Functionality and Validating Email
 function testEmail(email) {
@@ -8,18 +10,27 @@ function testEmail(email) {
 }
 function validEmail(emailValue) {
   if (testEmail(emailValue) === true) {
-    form.submit();
+    return true;
   } else {
     emailMsg.innerHTML = 'Please Enter the E-mail Pattern in Lower Case';
   }
 }
 
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const emailValue = form.querySelector('#email').value.trim();
+  const inputValue = form.querySelector('#username').value.trim();
+  console.log(inputValue);
   if (emailValue === '') {
     emailMsg.innerHTML = 'Email field is required!';
-  } else {
+  } 
+  if(inputValue === ''){
+    inputMsg.innerHTML = 'Name field is required!';
+  }
+  else {
     validEmail(emailValue);
   }
+  
 });
+
