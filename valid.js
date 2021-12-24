@@ -19,14 +19,11 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   const emailValue = form.querySelector('#email').value.trim();
   const inputValue = form.querySelector('#username').value.trim();
-  console.log(inputValue);
   if (emailValue === '') {
     emailMsg.innerHTML = 'Email field is required!';
-  } 
-  if (inputValue === '') {
+  } if (inputValue === '') {
     inputMsg.innerHTML = 'Name field is required!';
-  }
-  else {
+  } else {
     validEmail(emailValue);
   }
 });
