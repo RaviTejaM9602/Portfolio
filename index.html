@@ -77,7 +77,6 @@
    </section>
   </main>
 
- 
   
       <!--Work Section -1  -->
    
@@ -155,16 +154,22 @@
             </div>
          </div>
          
-       <form action="https://formspree.io/f/xnqwaogj"
-        method="POST"  class="input-section" >
-          <input type="text" placeholder="your name" maxlength="30" required>
-          <input type="email" placeholder="Enter your email" required>
-          <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
+<form action="https://formspree.io/f/xnqwaogj"
+        method="POST" class="input-section"> 
+            <small class="input-error"></small>         
+            <input type="text" name="username" id="username" autocomplete="off" placeholder="your name" maxlength="30">
+            <small class="email-error"></small>
+            <input type="email" name="email" id="email" autocomplete="off" placeholder="Enter your email" required>
+            <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
           <button class="btn" type="submit">Get It Touch</button>
-        </form>      
+        </form>            
       </div>  
   </footer>
+          
 
   <script src="./mobile.js"></script>
+  <script src="./popUp.js"></script>
+  <script src="./valid.js"></script>
+  <script src="./storage.js"></script>
 </body>
 </html>

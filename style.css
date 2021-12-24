@@ -417,6 +417,20 @@ textarea::placeholder {
   border: 1px solid  #396df2;
 }
 
+.email-error {
+  color: rgb(184, 50, 50);
+  width: fit-content;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.input-error {
+  color: rgb(184, 50, 50);
+  width: fit-content;
+  text-align: left;
+  align-self: flex-start;
+}
+
 button:hover {
   background-color: #396df2;
 }
