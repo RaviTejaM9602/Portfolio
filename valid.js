@@ -1,5 +1,4 @@
 const form = document.querySelector('.input-section');
-const NAME_REQUIRED = 'Please enter your name';
 const emailMsg = document.querySelector('.email-error');
 const inputMsg = document.querySelector('.input-error');
 
@@ -10,12 +9,11 @@ function testEmail(email) {
 }
 function validEmail(emailValue) {
   if (testEmail(emailValue) === true) {
-    return true;
+    form.submit();
   } else {
     emailMsg.innerHTML = 'Please Enter the E-mail Pattern in Lower Case';
   }
 }
-
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -25,12 +23,10 @@ form.addEventListener('submit', (event) => {
   if (emailValue === '') {
     emailMsg.innerHTML = 'Email field is required!';
   } 
-  if(inputValue === ''){
+  if (inputValue === '') {
     inputMsg.innerHTML = 'Name field is required!';
   }
   else {
     validEmail(emailValue);
   }
-  
 });
-
