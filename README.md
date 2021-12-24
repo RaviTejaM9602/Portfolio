@@ -19,7 +19,7 @@ Form Validation etc
 
 ## Live Demo
 
-[Live Demo Link](https://ravitejam9602.github.io/Portfolio/)
+[(https://ravitejam9602.github.io/Portfolio/)]
 
 
 ## Getting Started
