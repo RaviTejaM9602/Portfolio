@@ -19,13 +19,8 @@ Form Validation etc
 
 ## Live Demo
 
-<<<<<<< HEAD
-[Live Demo Link](https://ravitejam9602.github.io/Portfolio/)
-=======
-
 [Live Demo Link](https://ravitejam9602.github.io/Portfolio/)
 
->>>>>>> fba99010df8571ba4c58cee01dd5b18f9d3b20b6
 
 
 ## Getting Started
