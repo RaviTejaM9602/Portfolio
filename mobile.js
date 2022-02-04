@@ -20,17 +20,16 @@ overlayContent.addEventListener('click', closeMobileMenu);
 const projects = [
   {
     id: 1,
-    title: 'Tonic',
-    image: './images/Desktop/Grid-1/Snapshoot_Portfolio_1.svg',
+    title: 'Todo List App',
+    image: './images/todoList.png',
     imageAlt: 'First Project Image',
-    detailsHead: 'CANOPY',
-    details: ['Back End Dev', '2015'],
+    detailsHead: 'TODO',
+    details: ['Front End Dev', '2022'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    bigDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releated to project 1",
-    langs: ['html', 'css', 'javaScript'],
-    gitLink: '#',
-    srcLink: '#',
+    'To-do list is a tool that helps to organize our day. It simply lists the things that you need to do and allows you to mark them as complete by using ES6 and Webpack!',
+    langs: ['html', 'css', 'JavaScript'],
+    gitLink: 'https://github.com/RaviTejaM9602/To_Do_List_Application',
+    srcLink: 'https://github.com/RaviTejaM9602/To_Do_List_Application',
   },
   {
     id: 2,
