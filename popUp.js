@@ -8,7 +8,7 @@ const projects = [
     detailsHead: 'TODO',
     details: ['Front End Dev', '2022'],
     description:
-      "To-do list is a tool that helps to organize our day. It simply lists the things that you need to do and allows you to mark them as complete by using ES6 and Webpack!",
+      'To-do list is a tool that helps to organize our day. It simply lists the things that you need to do and allows you to mark them as complete by using ES6 and Webpack!',
     langs: ['html', 'css', 'JavaScript'],
     gitLink: 'https://github.com/RaviTejaM9602/To_Do_List_Application',
     srcLink: 'https://github.com/RaviTejaM9602/To_Do_List_Application',
