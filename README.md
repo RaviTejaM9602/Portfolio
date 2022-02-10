@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
-My_Portfolio_Website Using Flexbox
+Portfolio Web App shows a sneak peek of what I have done in the programming field and what I can offer to someone who wants to hire me. It is built by HTML, CSS & Vanilla JavaScript
 
 > One paragraph statement about the project.
 
